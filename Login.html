@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Assets/Css/Style.css">
+    <link rel="stylesheet" href="Assets/Css/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://nnlc.org/wp-content/uploads/2018/09/Learn-and-Earn-Final.png">
+    <title>Learn & Earn | Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid sticky-top shadow-sm nav-bg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://nnlc.org/wp-content/uploads/2018/09/Learn-and-Earn-Final.png" width="150" height="50" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-center" href="Index.html">Home</a>
+                    </li>
+                </ul>
+                <form class="d-lg-flex justify-content-center">
+                    <button id="enrollBtn" onclick="enroll()" class="btn btn-outline-light btn-width Enroll-btn mx-lg-2 mb-3 mb-lg-0 text-white rounded-pill" style="background-color:tomato; border: 1px solid tomato;" type="button">Enroll Now!</button>
+                    <button id="loginBtn" onclick="login()" class="btn btn-outline-light btn-width Login-btn mx-lg-2 rounded-pill" style="border: 1px solid tomato; color: tomato;" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-trans" id="boxContainer">
+        <div class="container-fluid container-lg shadow" id="hiddenBox">
+            <div class="row row-cols-1 row-cols-lg-4 bg-light text-center text-lg-start" style="border-top: 1px solid tomato;">
+                <div class="col pt-md-3 h6">
+                    <ul style="line-height: 2;">
+                        <li><a class="text-decoration-none text-dark" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none text-dark" href="#">Career</a></li>
+                        <li><a class="text-decoration-none text-dark" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col pt-md-3">
+                    <ul style="line-height: 2;">
+                        <li><a class="text-decoration-none text-dark" href="#">Become An Instructor</a></li>
+                        <li><a class="text-decoration-none text-dark" href="#">Become An Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="col pt-md-3">
+                    <img class="img-fluid" src="Assets/Img/nav-banner.jpg" width="300" alt="">
+                </div>
+                <div class="col pt-md-3">
+                    <h6>The ultimate playbook for creating viral content & monetize it like a pro</h6>
+                    <h5>Content Creation Mastery</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enroll System -->
+    <div class="container Con-Enroll">
+        <div class="box p-5 m-3 border">
+            <div class="box-register" id="register">
+                <div class="top-header text-center my-5">
+                    <h3>Hello, Again</h3>
+                    <small>We are happy to have you back.</small>
+                </div>
+                <div class="input-group">
+                    <div class="input-field m-3">
+                        <input type="text" class="input-box p-3" id="regEmail" required>
+                        <label for="regEmail">Email address</label>
+                    </div>
+                    <div class="input-field m-3">
+                        <input type="password" class="input-box p-3" id="logPassword" required>
+                        <label for="regPassword">Password</label>
+                        <div class="eye-area">
+                            <div class="eye-box" onclick="myLogPassword()">
+                                <i class="fa-regular fa-eye" id="eye"></i>
+                                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field p-5">
+                        <input type="submit" class="input-submit shadow p-3" value="Log In">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="Assets/Javascript/Script.js"></script>
+</body>
+</html>

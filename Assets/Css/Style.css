@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:425px){
+  *
+  {
+    font-size: 0.8rem;
+  }
+  
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 991px) 
+{
+    .btn-width
+    {
+        width: 100%;
+    }
+}
+ul
+{
+    list-style: none;
+}
+.nav-bg
+{
+    background-color: transparent !important;
+}
+nav ul li a {
+    transition: all 0.3s ease 0s !important;
+}
+nav ul li a:hover {
+    color: tomato !important;
+    transition: all 0.3s ease 0s !important;
+}
+div ul li a{
+    transition: all 0.3s ease 0s !important;
+}
+div ul li a:hover {
+    color: tomato !important;
+    transition: all 0.3s ease 0s !important;
+}
+.Enroll-btn:hover
+{
+    background-color: white !important;
+    color: tomato !important;
+}
+.Login-btn:hover
+{
+    background-color: tomato !important;
+    color: white !important;
+}
+#boxContainer
+{
+    display: none;
+    z-index: 1990;
+    position: absolute;
+    top:116px;
+}
+ .tg
+{
+  background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);  background-clip: text !important;
+  /* backdrop-filter: blur(3px); */
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+@media screen and (min-width: 992px)
+{
+    .carousel-item
+    {
+        height: 85vh !important;
+        min-height: 300px !important;
+        background: no-repeat scroll center scroll;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    .carousel-item
+    {
+        background: no-repeat scroll center scroll;
+        background-size: cover;
+    }
+}
+.carousel-caption
+{
+    bottom: 100px !important;
+}
+.carousel-caption h5
+{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.9;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background: tomato;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+.carousel-caption p a:hover
+{
+    color: tomato;
+    background-color: black;
+}
+/* Intensive */
+.sec-title h3 {
+    text-transform: capitalize;
+    /* font-size: 35px; */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.sec-title h3::before
+{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: tomato;
+    bottom: 0;
+    left: 25%;
+} 
+.upskil-bg
+{
+    background: url(/Assets/Img/upskill-bg.jpg) no-repeat center;
+    background-size: cover;
+    /* opacity: 0.7; */
+}
+.upskil-btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    background: tomato;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+.upskil-btn:hover
+{
+    color: tomato;
+    background-color: black;
+}
+.ls{
+    letter-spacing: 0.5px;
+}
+.fwt
+{
+    font-weight: 700;
+    font-size: 35px;
+}
+/* vertical tab start */
+.content .list{
+  width: 20%;
+  position: relative;
+}
+.content .list label{
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#Marketing:checked ~ .list label.Marketing,
+#Branding:checked ~ .list label.Branding,
+#Traffic:checked ~ .list label.Traffic,
+#Influence:checked ~ .list label.Influence,
+#Finance:checked ~ .list label.Finance{
+  color: #fff;  
+}
+.content .list label:hover{
+  color: #6d50e2;
+}
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 80%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+#Marketing:checked ~ .list .slider{
+  top: 0;
+}
+#Branding:checked ~ .list .slider{
+  top: 60px;
+}
+#Traffic:checked ~ .list .slider{
+  top: 120px;
+}
+#Influence:checked ~ .list .slider{
+  top: 180px;
+}
+#Finance:checked ~ .list .slider{
+  top: 240px;
+}
+.content .text-content{
+  width: 75%;
+  height: 100%;
+}
+@media screen and (min-width: 992px)
+{
+    .content .text{
+      display: none;
+    }
+    .content .text-content .Marketing{
+      display: block;
+    }
+    #Marketing:checked ~ .text-content .Marketing,
+    #Branding:checked ~ .text-content .Branding,
+    #Traffic:checked ~ .text-content .Traffic,
+    #Influence:checked ~ .text-content .Influence,
+    #Finance:checked ~ .text-content .Finance{
+      display: block;
+    }
+    #Branding:checked ~ .text-content .Marketing,
+    #Traffic:checked ~ .text-content .Marketing,
+    #Influence:checked ~ .text-content .Marketing,
+    #Finance:checked ~ .text-content .Marketing{
+      display: none;
+    }
+}
+.content input{
+  display: none;
+}
+.digi-img
+{
+  width: 300px;
+  height: 300px;
+}
+.digi-img img{
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 992px){
+  .digi-img
+  {
+    width: 1000px;
+    height: 350px;
+  } 
+}
+@media screen and (max-width: 426px){
+  .digi-img
+  {
+    width: 150px;
+    height: 200px;
+  } 
+}
+/* vertical tab end */
+.zoom
+{
+  transition: .3s;
+}
+.zoom:hover
+{
+  transform: translateY(-10px);
+}
+.photo
+{
+  width: 360px;
+  height: 540px;
+}
+.card-zoom
+{
+    overflow: hidden;
+}
+.card-zoom img
+{
+    transition: all .5s ease;
+}
+.card-zoom img:hover
+{
+    /* backface-visibility: hidden; */
+    transform: translateZ(0) scale(1.1);
+    position: relative;
+}

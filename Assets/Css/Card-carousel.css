@@ -1,0 +1,86 @@
+.card_wrapper {
+	/* background: linear-gradient(180deg, #23273A 46.35%, #FA4A6F 119.01%); */
+	width: 100%;
+	/* height: 100vh; */
+	display: flex;
+	align-items: center;
+}
+.card_wrapper .card{
+	transition: .3s;
+	height: 300px;
+}
+
+.card_wrapper .card:hover {
+	transform: translateY(-10px);
+}
+.slider_carousel .owl-nav{
+	 position: absolute;
+	 top: 50%;
+	 width: 100%;
+}
+
+.slider_carousel .owl-prev, .slider_carousel .owl-next {
+	width: 20px;
+	height: 20px;
+	background-color: tomato;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;	
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.slider_carousel .owl-next {
+    right: -30px;
+}
+
+.slider_carousel .owl-prev {
+    left: -30px;
+}
+@media screen and (max-width:576px)
+{
+	.slider_carousel .owl-next {
+		right: -25px;
+	}
+	
+	.slider_carousel .owl-prev {
+		left: -25px;
+	}	
+}
+.instructors .slider_carousel .owl-next
+{
+	right: -35px
+}
+.instructors .slider_carousel .owl-prev
+{
+	left: -15px
+}
+
+.instructors .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.instructors .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: none;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.instructors .card:hover .name {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease 0s !important;
+
+}

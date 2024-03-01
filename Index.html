@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- all css here -->
+    <link href="Assets/Css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/Css/Style.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/Css/Card-carousel.css" rel="stylesheet"/>
+    
+    <!-- animation cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- title and logo -->
+    <link rel="icon" href="Assets/Img/logo.png">
+    <title>Learn & Earn</title>
+</head>
+<body>
+<section>    
+    <div class="container-fluid bg-dark">
+        <div class="container d-flex justify-content-md-between justify-content-center">
+            <div class="my-2">
+                <i class="fa fa-envelope-o text-light" aria-hidden="true"><a class="text-light text-decoration-none fs-6" href="mailto:selinajenifer2000@gmail.com"><span class="tg">&nbsp;contact@example.com</span></a></i>&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-mobile text-light" aria-hidden="true"><span class="fs-6 tg">&nbsp;+1&nbsp;&nbsp;5589&nbsp;55488&nbsp;55</span></i>
+            </div>
+            <div class="d-none d-md-flex justify-content-center">
+                <a class="text-decoration-none text-light p-2" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="text-decoration-none text-light p-2" href="https://www.facebook.com/login.php" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a class="text-decoration-none text-light p-2" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                <a class="text-decoration-none text-light p-2" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid sticky-top shadow-sm nav-bg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://nnlc.org/wp-content/uploads/2018/09/Learn-and-Earn-Final.png" width="150" height="50" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-center" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-center dot" id="showBox" href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <form class="d-lg-flex justify-content-center">
+                    <button id="enrollBtn" onclick="enroll()" class="btn btn-outline-light btn-width Enroll-btn mx-lg-2 mb-3 mb-lg-0 text-white rounded-pill" style="background-color:tomato; border: 1px solid tomato;" type="button">Enroll Now!</button>
+                    <button id="loginBtn" onclick="login()" class="btn btn-outline-light btn-width Login-btn mx-lg-2 rounded-pill" style="border: 1px solid tomato; color: tomato;" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="boxContainer">
+        <div class="container-fluid container-lg shadow" id="hiddenBox">
+            <div class="row row-cols-1 row-cols-lg-4 bg-light text-center text-lg-start justify-content-center" style="border-top: 1px solid orange;">
+                <div class="col pt-md-3 h6">
+                    <ul style="line-height: 2;">
+                        <li><a class="text-decoration-none text-dark" href="About-us.html">About Us</a></li>
+                        <li><a class="text-decoration-none text-dark" href="Career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col pt-md-3">
+                    <img class="img-fluid" src="Assets/Img/nav-banner.jpg" width="300" alt="">
+                </div>
+                <div class="col pt-md-3">
+                    <h6>The ultimate playbook for creating viral content & monetize it like a pro</h6>
+                    <h5>Content Creation Mastery</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Navbar end -->
+<!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active txt" data-bs-interval="5000">
+                <img src="Assets/Img/carousel-1-demo.jpg" class="img-fluid d-block w-100" alt="First Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="text-white animated bounceInRight" style="animation-delay: 1s;">
+                        <h5>An Innovative IT Solutions</h5>
+                    </div>
+                    <p class="animated bounceInLeft d-none d-lg-block" style="animation-delay: 2s;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit aspernatur quasi.
+                    </p>
+                    <p class="animated bounceInRight d-none d-lg-block" style="animation-delay: 2.1s;">
+                        <a href="KnowledgeCorner.html" class="rounded-pill">Learn More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="Assets/Img/carousel-2-demo.jpg" class="img-fluid d-block w-100" alt="Second Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="text-white animated bounceInRight" style="animation-delay: 1s;">
+                        <h5>Education That Matters</h5>
+                    </div>                    
+                    <p class="animated bounceInLeft d-none d-lg-block" style="animation-delay: 2s;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit aspernatur quasi.
+                    </p>
+                    <p class="animated bounceInRight d-none d-lg-block" style="animation-delay: 2.1s;">
+                        <a href="KnowledgeCorner.html" class="rounded-pill">Learn More</a>
+                    </p>
+                </div>
+            </div>  
+        </div>
+        <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<!-- Carousel end -->
+<!-- Intensive programs start -->
+    <div class="container my-3">
+        <div class="py-3">
+            <div class="sec-title text-center">
+                <h3>
+                    Intensive Program
+                </h3>
+            </div>
+            <div class="my-4">
+                <a href="Content-Creation.html">
+                    <img class="img-fluid" src="Assets/Img/nav-banner.jpg" alt="Banner">
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- Intensive programs end-->
+<!-- Digital Entrepreneurship Bundles start -->
+    <div class="digi-tab my-3 d-flex justify-content-center align-items-center">
+        <div class="container verticaltab py-3">
+            <div class="sec-title topic mb-4 text-center aos-init aos-animate" data-aos="fade-down">
+                <h3>Digital Entrepreneurship Bundles</h3>
+                <p>Choose from the wide range of skillful courses to crack the ultimate code of success in the social media world.</p>
+            </div>
+            <div class="content d-flex align-items-center justify-content-lg-between my-5 justify-content-center">
+                <input type="radio" name="slider" checked id="Marketing">
+                <input type="radio" name="slider" id="Branding">
+                <input type="radio" name="slider" id="Traffic">
+                <input type="radio" name="slider" id="Influence">
+                <input type="radio" name="slider" id="Finance">
+                <div class="list d-none d-lg-flex flex-column me-5 ">
+                    <label for="Marketing" class="Marketing fs-5 ps-4">
+                        <span class="title">Marketing</span>
+                    </label>
+                    <label for="Branding" class="Branding fs-5 ps-4">
+                        <span class="title">Branding</span>
+                    </label>
+                    <label for="Traffic" class="Traffic fs-5 ps-4">
+                        <span class="title">Traffic</span>
+                    </label>
+                    <label for="Influence" class="Influence fs-5 ps-4">
+                        <span class="title">Influence</span>
+                    </label>
+                    <label for="Finance" class="Finance fs-5 ps-4">
+                        <span class="title">Finance</span>
+                    </label>
+                    <div class="slider rounded"></div>
+                </div>
+                <div class="text-content aos-init aos-animate" data-aos="fade-up">
+                    <div class="Marketing text border border-danger p-3 my-3 shadow rounded">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="order-2 order-lg-1 pe-4">
+                                <div class="title h3 mb-3">Marketing Mastery</div>
+                                <p class="pt-2">They say that good marketing makes the company look smart and great marketing makes the customer feel smart.This bundle shall teach you how to master this very important skill. In this age of digital content creation digital marketing is what you need to put yourself or your clients on the map.</p>
+                                <p>
+                                    <span><i class="fa fa-book text-danger" aria-hidden="true"></i>&nbsp;01 Course</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-clock-o text-danger" aria-hidden="true"></i>15+&nbsp;hours</span>
+                                </p>
+                                <p class="d-flex flex-column flex-md-row">
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;Live Q&A Support&nbsp;&nbsp;</span>
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;13+ Students Enrolled&nbsp;&nbsp;</span>
+                                </p>
+                                <a class="text-decoration-none upskil-btn rounded shadow my-3" href="#">Know More</a>
+                            </div>
+                            <div class="order-1 order-lg-2 mb-3 mb-lg-0 digi-img">
+                                <img class="img-fluid rounded" src="Assets/Img/Market.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Branding text border border-danger p-3 my-4 shadow rounded">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="order-2 order-lg-1 pe-4">
+                                <div class="title h3 mb-3">Branding Mastery</div>
+                                <p class="pt-2">They say that good marketing makes the company look smart and great marketing makes the customer feel smart.This bundle shall teach you how to master this very important skill. In this age of digital content creation digital marketing is what you need to put yourself or your clients on the map.</p>
+                                <p>
+                                    <span><i class="fa fa-book text-danger" aria-hidden="true"></i>&nbsp;01 Course</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-clock-o text-danger" aria-hidden="true"></i>15+&nbsp;hours</span>
+                                </p>
+                                <p class="d-flex flex-column flex-md-row">
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;Live Q&A Support&nbsp;&nbsp;</span>
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;13+ Students Enrolled&nbsp;&nbsp;</span>
+                                </p>
+                                <a class="text-decoration-none upskil-btn rounded shadow my-3" href="#">Know More</a>
+                            </div>
+                            <div class="order-1 order-lg-2 mb-3 mb-lg-0 digi-img">
+                                <img class="img-fluid rounded" src="Assets/Img/Brand.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Traffic text border border-danger p-3 my-4 shadow rounded">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="order-2 order-lg-1 pe-4">
+                                <div class="title h3 mb-3">Traffic Mastery</div>
+                                <p class="pt-2">They say that good marketing makes the company look smart and great marketing makes the customer feel smart.This bundle shall teach you how to master this very important skill. In this age of digital content creation digital marketing is what you need to put yourself or your clients on the map.</p>
+                                <p>
+                                    <span><i class="fa fa-book text-danger" aria-hidden="true"></i>&nbsp;01 Course</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-clock-o text-danger" aria-hidden="true"></i>15+&nbsp;hours</span>
+                                </p>
+                                <p class="d-flex flex-column flex-md-row">
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;Live Q&A Support&nbsp;&nbsp;</span>
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;13+ Students Enrolled&nbsp;&nbsp;</span>
+                                </p>
+                                <a class="text-decoration-none upskil-btn rounded shadow my-3" href="#">Know More</a>
+                            </div>
+                            <div class="order-1 order-lg-2 mb-3 mb-lg-0 digi-img">
+                                <img class="img-fluid rounded" src="Assets/Img/traffic.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Influence text border border-danger p-3 my-4 shadow rounded">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="order-2 order-lg-1 pe-4">
+                                <div class="title h3 mb-3">Influence Mastery</div>
+                                <p class="pt-2">They say that good marketing makes the company look smart and great marketing makes the customer feel smart.This bundle shall teach you how to master this very important skill. In this age of digital content creation digital marketing is what you need to put yourself or your clients on the map.</p>
+                                <p>
+                                    <span><i class="fa fa-book text-danger" aria-hidden="true"></i>&nbsp;01 Course</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-clock-o text-danger" aria-hidden="true"></i>15+&nbsp;hours</span>
+                                </p>
+                                <p class="d-flex flex-column flex-md-row">
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;Live Q&A Support&nbsp;&nbsp;</span>
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;13+ Students Enrolled&nbsp;&nbsp;</span>
+                                </p>
+                                <a class="text-decoration-none upskil-btn rounded shadow my-3" href="#">Know More</a>
+                            </div>
+                            <div class="order-1 order-lg-2 mb-3 mb-lg-0 digi-img">
+                                <img class="img-fluid rounded" src="Assets/Img/influence.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Finance text border border-danger p-3 my-4 shadow rounded">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="order-2 order-lg-1 pe-4">
+                                <div class="title h3 mb-3">Finance Mastery</div>
+                                <p class="pt-2">They say that good marketing makes the company look smart and great marketing makes the customer feel smart.This bundle shall teach you how to master this very important skill. In this age of digital content creation digital marketing is what you need to put yourself or your clients on the map.</p>
+                                <p>
+                                    <span><i class="fa fa-book text-danger" aria-hidden="true"></i>&nbsp;01 Course</span>&nbsp;&nbsp;
+                                    <span><i class="fa fa-clock-o text-danger" aria-hidden="true"></i>15+&nbsp;hours</span>
+                                </p>
+                                <p class="d-flex flex-column flex-md-row">
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;Live Q&A Support&nbsp;&nbsp;</span>
+                                    <span><i class="fa fa-check text-danger" aria-hidden="true"></i>&nbsp;13+ Students Enrolled&nbsp;&nbsp;</span>
+                                </p>
+                                <a class="text-decoration-none upskil-btn rounded shadow my-3" href="#">Know More</a>
+                            </div>
+                            <div class="order-1 order-lg-2 mb-3 mb-lg-0 digi-img">
+                                <img class="img-fluid rounded" src="Assets/Img/finance.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Digital Entrepreneurship Bundles end -->
+<!-- Upskilling Courses start-->
+    <div class="container-fluid card_wrapper my-3 upskil-bg">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 sec-title text-center aos-init aos-animate" data-aos="fade-down">
+                    <h3>
+                        Upskilling Courses
+                    </h3>
+                    <p class="fs-5 py-4">
+                        This segment offers lifetime access to a plethora of courses with self-paced learning.
+                    </p>
+                </div>
+                <div class="col-12 aos-init aos-animate" data-aos="fade-up">
+                    <div class="owl-carousel slider_carousel">
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider1.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Learn Copywriting From Scratch</p>                                    
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider2.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Email Marketing and Marketing Automation</p>                                    
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider3.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>WordPress Academy Step by Step</p>                                   
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider4.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Beginners Guide to Graphology</p>
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider5.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Diabetes Management Program</p>
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider6.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Beginners Guide to Women Health</p>                                    
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider7.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Basic of weight Management</p>                                    
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider8.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Learn Nutrition for Different Life Stages</p>                                    
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider9.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Diet Management Course For Beginners</p>                                    
+                            </div>
+                        </div>
+                        <div class="card shadow rounded my-3">
+                            <img src="Assets/Img/slider10.jpg" alt="" class="card-img-top">
+                            <div class="card-body text-center">
+                                <p>Content Writing Mastery Course</p>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center my-3 aos-init aos-animate" data-aos="fade-up">
+                    <a class="text-decoration-none upskil-btn rounded shadow fs-6" href="KnowledgeCorner.html">Explore more courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Upskilling Courses end -->
+<!-- How Learn&Earn Works start-->
+    <div class="container-fluid my-3">
+        <div class="container py-5">
+            <div class="sec-title text-center aos-init aos-animate" data-aos="fade-down">
+                <h3>How Learn & Earn Works</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 container my-3 aos-init aos-animate" data-aos="fade-up">
+                <div class="col px-1">
+                    <div class="text-center">
+                        <div class="mt-3">
+                            <img src="Assets/Img/Explore.webp" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h4>Explore</h4>
+                            <h6 class="text-primary ls">Different Bundles Trending Skills</h6>
+                            <p class="p-2">Explore the million possibilities of getting in touch with all the trending skills in the market.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-1">
+                    <div class="text-center">
+                        <div class="mt-3">
+                            <img src="Assets/Img/Learn.webp" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h4>Learn</h4>
+                            <h6 class="text-primary ls">From the best of the best trainers</h6>
+                            <p class="p-2">Learn from trainers who have real-time expertise in their respective fields.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-1">
+                    <div class="text-center">
+                        <div class="mt-3">
+                            <img src="Assets/Img/Inspire.webp" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h4>Inspire</h4>
+                            <h6 class="text-primary ls">The world around you</h6>
+                            <p class="p-2">Inspire people close to you and help make a tangible difference in society.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- How Learn&Earn Works end-->
+<!-- Why Learn&Earn start -->
+    <div class="container-fluid my-3 upskil-bg">
+        <div class="container py-5 text-center">
+            <div class="sec-title aos-init aos-animate" data-aos="fade-down">
+                <h3>Why Learn & Earn</h3>
+            </div>
+            <div class="row row-cols-2 row-cols-lg-4 py-5 aos-init aos-animate" data-aos="fade-up">
+                <div class="col">
+                    <h1 class="text-primary fwt">200+</h1>
+                    <p>Trainers</p>
+                </div>
+                <div class="col">
+                    <h1 class="text-primary fwt">2&nbsp;Lakh+</h1>
+                    <p>Students Enrolled</p>
+                </div>
+                <div class="col">
+                    <h1 class="text-primary fwt">500+</h1>
+                    <p>Live Training</p>
+                </div>
+                <div class="col">
+                    <h1 class="text-primary fwt">80Cr.+</h1>
+                    <p>Community Earning</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Why Learn&Earn end -->
+<!-- Instructors -->
+    <div class="container-fluid my-3">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 sec-title text-center aos-init aos-animate" data-aos="fade-down">
+                    <h3>
+                        Instructors At Learn & Earn
+                    </h3>
+                </div>
+                <div class="col-12 instructors aos-init aos-animate" data-aos="fade-up">
+                    <div class="owl-carousel slider_carousel row">
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins1.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Rajeev</p>                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins2.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Piyuesh</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins3.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Keshave</p>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins4.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Kamalpreet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins5.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Sekhar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins6.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Navdeep</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins7.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Mandeep</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins8.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Nidhi</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins9.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Krishna</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3">
+                            <div class="card shadow rounded my-3">
+                                <img src="Assets/Img/ins10.jpg" alt="" class="card-img-top">
+                                <div class="name text-white fs-3 fw-bold">
+                                    <p>Divya</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Instructors end -->
+<!-- Our media presence start -->
+    <div class="container-fluid upskil-bg my-3">
+        <div class="container py-5">
+            <div class="sec-title text-center aos-init aos-animate" data-aos="fade-down">
+                <h3>Our Media Presence</h3>
+            </div>
+            <div class="row my-5 row-cols-1 row-cols-lg-4 row-cols-md-2 aos-init aos-animate" data-aos="fade-up">
+                <div class="col text-center">
+                    <div class="media">
+                        <h6>
+                            Learn&Earn helps people learn digital entrepreneurship skills
+                        </h6>
+                        <img class="img-fluid" src="Assets/Img/dailyhunt.webp" width="120" height="83" alt="">
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="media">
+                        <h6>
+                            Learn&Earn has created 1 lakh digital entrepreneurs in just a year- 2021. 
+                        </h6>
+                        <img src="Assets/Img/outlook.webp" alt="" width="120" height="83" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="media">
+                        <h6>
+                            Journey from an MNC employee to upskilling over 60,000 Indian Youth
+                        </h6>
+                        <img src="Assets/Img/zee-business.webp" alt="" width="120" height="83" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="media">
+                        <h6>
+                            An Edtech Startup Taking Digital Entrepreneurship To New Heights
+                        </h6>
+                        <img src="Assets/Img/enter.webp" alt="" width="120" height="83" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Our media presence end -->
+<!-- Browse Reviews start-->
+    <div class="container-fluid my-3">
+        <div class="container py-5 py-lg-2">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col-md-4 p-5 text-center aos-init aos-animate" data-aos="fade-down">
+                    <img class="img-fluid photo" src="Assets/Img/photo.webp" alt="">
+                </div>
+                <div class="col-md-8 d-flex flex-column justify-content-center p-5 aos-init aos-animate" data-aos="fade-up">
+                    <h2>What Others Have To Say About Learn & Earn</h2>
+                    <p class="my-4">Learn&Earn has been a life-changing platform for thousands of Indians. Browse what people have to say about us.</p>
+                    <a href="Review.html"><button class="btn btn-outline-light btn-width text-white rounded" style="background-color:tomato; border: 1px solid tomato;" type="button">Browse Review</button>
+                    </a>
+                </div>  
+            </div>
+        </div>
+    </div>
+<!-- Browse Reviews end -->
+<!-- accordian start -->
+    <div class="container-fluid my-3 upskil-bg">
+        <div class="container-lg container-fluid py-5">
+            <div class="sec-title text-center aos-init aos-animate" data-aos="fade-down">
+                <h3>          
+                    Frequently Asked Questions      
+                </h3>
+            </div>
+            <div class="container w-md-50 w-75 aos-init aos-animate" data-aos="fade-up">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item my-5 shadow">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            1.&nbsp;What is Learn&Earn?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item my-5 shadow">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2.&nbsp;What opportunity does Learn&Earn provide?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item my-5 shadow">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3.&nbsp;What are education bundles?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item my-5 shadow">
+                        <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4.&nbsp;What kind of skill based courses do you provide?
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-5 shadow">
+                        <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5.&nbsp;Is Learn&Earn Government verified?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- accordian end -->
+<!-- Learner support start -->
+    <div class="container-fluid my-3" id="contact">
+        <div class="container-lg container-fluid py-5">
+            <div class="sec-title text-center align-items-center aos-init aos-animate" data-aos="fade-down">
+                <h3>Learn & Earn Learner Support</h3>
+            </div>
+            <div class="row my-3 justify-content-center align-items-center aos-init aos-animate" data-aos="fade-down">
+                <div class="col-4 text-end">
+                    <img src="Assets/Img/support_side_img.webp" class="img-fluid" width="280" height="230"  alt="">
+                </div>
+                <div class="col-8 ps-5">
+                    <h5><span><i class="fa fa-phone text-danger" aria-hidden="true"></i></span>&nbsp;+91 8567856753</h5>
+                    <p>(We are available on Monday-Sunday from 9:30 AM to 6:00 PM)</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center py-3 aos-init aos-animate" data-aos="fade-up">
+                <div class="shadow p-3 w-75">  
+                    <h5>Disclaimer :</h5>
+                    <p>Learn & Earn is not responsible for payment made against our products to anyone other than our website or through affiliate link.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Learner support end -->
+<!-- contact page start -->
+    <section class="container-fluid mt-5" style="background-color: rgb(21, 34, 32);">
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-lg-4 text-lg-start text-center align-items-center">
+                <div class="col text-white">
+                    <h3 class="tg fw-bold">Learn & Earn</h3>
+                    <p class="pt-2">
+                        Learn & Earn is bringing the learner community of all age groups under one roof to learn, implement, and grow with the dynamic skills of the future to help you stand out of the crowd.
+                        <div class="d-flex text-center justify-content-center justify-content-lg-start my-2">
+                            <div class="p-2 m-1 border border-white rounded">
+                                <a style="color: gray;" class="text-decoration-none" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="p-2 m-1 border border-white rounded">
+                                <a style="color: gray;" class="text-decoration-none" href="https://www.facebook.com/login.php" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="p-2 m-1 border border-white rounded">
+                                <a style="color: gray;" class="text-decoration-none" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                            </div>
+                            <div class="p-2 m-1 border border-white rounded">
+                                <a style="color: gray;" class="text-decoration-none" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-white py-sm-2 aos-init aos-animate" data-aos="fade-up">
+                    <ul style="line-height: 2;">
+                        <h4 class="tg">Useful Links</h4>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Become An Instructor</li>
+                        <li>Become An Affiliate</li>
+                    </ul>
+                </div>
+                <div class="col text-white aos-init aos-animate" data-aos="fade-down">
+                    <ul style="line-height: 2;">
+                        <h4 class="tg">Support</h4>
+                        <li>Contact Us</li>
+                        <li>Press</li>
+                        <li>Disclaimer</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </div>
+                <div class="col text-white">
+                    <ul style="line-height: 2;">
+                        <li><img src="Assets/Img/app_view3.webp" class="img-fluid" width="259" height="270" alt=""></li>
+                        <li class="pt-2">Download Learn & Earn app</li>
+                        <li class="d-flex justify-content-center">
+                            <span><img src="Assets/Img/appstore.webp" class="img-fluid" width="150" height="50"></span>
+                            <span><img src="Assets/Img/googleplay.webp" class="ms-1 img-fluid" width="150" height="50" alt=""></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row text-white border-top py-3 text-center align-items-center">
+            <h6>All Rights Reserved © 2022 | BIZGURUKUL PRIVATE LIMITED
+            </h6>
+        </div>
+    </section>
+
+<!-- contact page end -->
+
+
+
+
+
+
+</section>
+<script src="Assets/Javascript/Script.js"></script>
+<script src="Assets/Javascript/jquery-3.4.1.min.js"></script>
+<script src="Assets/Javascript/bootstrap.min.js"></script>
+<script src="Assets/Javascript/owl.carousel.min.js"></script>
+<script src="Assets/Javascript/Card-carousel.js"></script>
+
+</body>
+</html>
